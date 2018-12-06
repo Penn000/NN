@@ -27,10 +27,9 @@ train = optimizer.minimize(loss)
 # train
 init = tf.global_variables_initializer()
 
-sess = tf.Session()
-sess.run(init)
-
-for step in range(1, 201):
-    sess.run(train)
-    if step % 20 == 0:
-        print(step, sess.run(w), sess.run(b))
+with tf.Session() as sess:
+    sess.run(init)
+    for step in range(1, 201):
+        sess.run(train)
+        if step % 20 == 0:
+            print(step, sess.run(w), sess.run(b))
