@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 *.ipynb_checkpoints
 jupyter/*/.ipynb_checkpoints/
+=======
+/notebook/**/.ipynb_checkpoints
+>>>>>>> 065bf1163c4824bb8aa5ba4be5de68568b96aca4
